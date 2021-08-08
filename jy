@@ -1,0 +1,40 @@
+class company
+{
+  constructor(cname,country)
+  {
+  this.cname=cname;
+  this.country=country;
+  }
+  getcompany()
+  {
+    return this.cname;
+    
+  }
+}
+class car extends company
+{
+  constructor(name,cname,country,year,model)
+  {
+    super(name,country);
+    this.name=name;
+    this.model=model;
+    this.year=year;
+  }
+  getcar()
+  {
+  
+    return this.name;
+  
+  }
+}
+let cars=[];
+let car1=new car('AUDI','The Volkswagen Auto Group','Germany','2019','Audi A6');
+let car2=new car('MERCEDES','Daimler AG','Germany','2014','Mercedes Benz C');
+let car3=new car('TESLA','Elon Mask','United States','2018','Roadster');
+let car4=new car('BMW','Bayerische Motoren Werke AG','Germany','2020','BMW 5');
+let car5=new car('RANGE ROVER','Jaguar land Rover','England','2018','Range Rover Sport');
+console.log(car1.getcar());
+console.log(car2.getcar());
+console.log(car3.getcar());
+console.log(car4.getcar());
+console.log(car5.getcar());
